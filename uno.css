@@ -1,0 +1,404 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #f0f2f5, #dfe3ee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    margin: 0;
+
+}
+
+#uno{
+    width: 1516px;
+    height: 120px;
+margin-top: -670px;
+align-items: center;
+padding:10px ;
+    background-color: rgb(0,0,0);
+
+display: flex;}
+.search-container {
+    margin-left: 400px;
+    margin-top: 80px;
+position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0px;
+    overflow: hidden;
+    outline: none;
+    padding: 0px 8px 0px 0px;
+    font-size:20 px;
+  
+   
+}
+
+#search-bar {
+    border: none;
+    padding: 10px 20px;
+    width: 500px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 0px;
+    border-color: rgb(252, 243, 243);
+    position: relative;
+}
+
+#search-button {
+    background-color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    
+}
+.search-container:focus-within{
+    border: 1px solid  #000000;
+            }
+#search-button svg {
+    fill: rgb(200, 192, 192);
+}
+
+#search-bar::placeholder {
+    color: #ccc;
+    font-size: 16px;
+    
+}
+.linea{
+    width: 1px;
+    height: 40px;
+    background-color:#ccc;
+    margin: 0 10px;
+}
+
+.menu{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*para darle una posicion y tamaño ala caja div*/
+    width: 70%;
+    height: 60px;/* Para subir o bajar la lista*/
+    position: absolute;
+    left: 290px;
+    /*tama de lista*/
+    display: flex; /* Muestra un elemento como un contenedor flexible a nivel de bloque*/
+    align-items:flex-end; 
+}
+.menu2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*para darle una posicion y tamaño ala caja div*/
+    width: 20%;
+    height: 105px;/* Para subir o bajar la lista*/
+    position: absolute;
+    right: 62px;
+    /*tama de lista*/
+    display: flex; /* Muestra un elemento como un contenedor flexible a nivel de bloque*/
+    align-items:flex-end;
+}
+ul li{/*lista*/
+    
+    font-size: 20px;
+    display:inline-block;
+    padding: 0 30px; /*sepacion de list*/
+}
+.ul1 li{
+
+    font-size: 20px;
+    display:inline-block;
+    padding: 0 10px; /*sepacion de list*/
+}
+a{
+    color: rgba(240, 238, 238, 0.495);
+    text-decoration: none;
+}
+a:hover{ /*color al pasas sobre la lista*/
+    color: rgb(173, 138, 10);
+}
+
+.menu li:hover{/*zoom a la lista*/
+    transform: scale(1.2);
+}
+#dos ul{
+    margin-top: 20px;
+    margin-left: -600px;
+list-style-type: none;
+display: flex;
+align-items: center;
+    
+    }
+    #dos ul li{
+       margin-right: 20px;
+    }
+    #dos ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        color:rgba(233, 233, 233, 0.425);
+       
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+     #dos ul li a:hover{
+      color: rgb(255, 98, 0);
+     }
+     #tres{
+
+        margin-top:20px;
+        margin-left: 50px;
+     }
+     #tres li a{
+
+        text-decoration: none;
+        font-weight: bold;
+        color:rgba(233, 233, 233, 0.425);
+       
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+     #tres  li a:hover{
+        color: rgb(255, 98, 0);
+       }
+    
+     #logo1{
+        position: absolute;
+        left: 50px;
+       top: 5px;
+    }
+ 
+    
+    #logo2{
+       
+
+        width:1300px;
+        height: 300px;
+        object-fit: cover;
+        cursor:pointer;
+
+    }
+    .container1{
+
+        width:1300px;
+        height:300px;
+        padding:15px;
+        position: absolute;
+        left: 100px;
+           top: 90px;
+        transform: translate(-50%,-50);
+     
+    
+    }
+    
+
+    #img{
+        display: flex;
+        justify-content: space-evenly;
+       width:300px;
+        height: 300px;
+        object-fit: cover;
+        cursor:pointer;
+
+    }
+    
+    body{
+        background-color: rgba(226, 225, 228, 0.425);
+        flex-wrap: wrap;
+        
+    }
+    .slider-box{
+       
+        width: 63%;
+        height: 210px;
+        padding: 25px;
+        background-color: rgba(226, 225, 228, 0.425);
+        position: absolute;
+        top: 00px; 
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .ella{ 
+        width: 60px;
+        height: 50px;
+        position: absolute;
+         left: -100px;
+         top: 30px;  
+    
+    }
+    .el{ 
+        width: 60px;
+        height: 50px;
+        position: absolute;
+         left: 300px;
+         top: 30px;  
+    
+    }
+    .niños{ 
+        width: 60px;
+        height: 50px;
+        position: absolute;
+         left: 700px;
+         top: 30px;  
+    
+    }
+    .img{
+        
+        object-fit: cover;
+        cursor: pointer;    
+    }
+    .img11{ 
+        width: 90px;
+        height: 70px;
+        position: absolute;
+         left: -550px;
+         top: 30px;  
+    
+    }
+    .img12{
+        width: 90px;
+        height: 70px;
+        position: absolute;
+         left: 0px;
+         top: 30px;   
+    
+    }
+    .img13{
+        width: 90px;
+        height: 70px;
+        position: absolute;
+         left: 250px;
+         top: 30px;  
+    
+    }
+    .img14{ 
+        width: 90px;
+        height: 70px;
+        position: absolute;
+         left: 500px;
+         top: 30px;  
+    
+    }
+    .img15{ 
+        width: 90px;
+        height: 70px;
+        position: absolute;
+         left: 750px;
+         top: 30px;  
+    
+    }
+    .img16{
+        width: 90px;
+        height: 70px;
+        position: absolute;
+         left: -250px;
+         top: 300px;  
+    
+    }
+    .img17{
+        width: 90px;
+        height: 70px;
+        position: absolute;
+         left: 0px;
+         top: 300px;   
+    }
+    .img18{ 
+        width: 90px;
+        height: 70px;
+        position: absolute;
+         left: 250px;
+         top: 300px;  
+    }
+    .img19{ 
+        width: 90px;
+        height: 70px;
+        position: absolute;
+         left: 500px;
+         top: 300px;  
+    }
+    .img20{ 
+        width: 90px;
+        height: 70px;
+        position: absolute;
+         left: 750px;
+         top: 300px;  
+    }
+    
+
+    .card{
+        margin: 10px;
+        width: 200px;
+        height: 230px;
+        position: relative;
+        left: 380px;
+        top: 410px;  
+        cursor: pointer;     
+    }
+    .card .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s;
+    
+    }
+    .card .front{
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 5px #000;
+    }
+    .card .front img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card .front h3{
+        opacity: 0.5;
+        position: absolute;
+        width: 100%;
+        bottom: 10px;
+        height: 25px;
+    line-height: 25px;
+    color: #202020;
+    background: rgb(248, 248, 248);
+    text-align: center;
+    }
+    .card .back { 
+        transform: perspective(600px) rotateY(180deg);
+        background: rgb(3, 35, 54);
+        padding: 15px;
+        color: aqua;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: justify;
+        font-size: 15px;
+        box-shadow: 0 5px 5px #000;
+    
+    }
+    .card .back .link{ 
+        border-top: solid 1px #f5f5f6;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .card .back .link a{
+        color: aquamarine; 
+        text-decoration: none;
+    }
+    .card .back .link a:hover{ 
+        color: rgb(238, 238, 238);
+    }
+    .card .back h3{
+        color: #f5f5f6;
+        font-size: 20px;
+        margin-top: 5px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    .card:hover .front{
+        transform: perspective(600px) rotateY(180deg);
+    }
+    .card:hover .back{
+        transform: perspective(600px) rotateY(360deg);
+    }
+    

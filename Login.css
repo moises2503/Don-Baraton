@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(226, 225, 228, 0.425);
+}
+.contenedor{
+   /* border: 2px solid black;*/
+    width: 700px;
+    height: 500px;
+    display: flex;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(0,0,0,0.3);
+
+    
+}
+.contenedor-formulario{
+   /* border: 2px solid black;*/
+    width:100% ;
+    /* el overflow hidden sirve para poder tapar lo que salio del formulario */
+    overflow: hidden;
+
+}
+
+.contenedor-formulario form{height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease-in-out;
+    
+}
+
+.contenedor-formulario h2{
+font-size: 30px;
+
+margin-bottom: 20px;
+
+}
+
+.contenedor-formulario span{
+    font-size: 12px;
+    margin: 15px;
+}
+
+.imagen{
+
+
+width: 300px;
+height: 40px;
+margin-bottom: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 8px;
+padding: 0 15px;
+background-color: #eee;
+border-radius: 500px ;
+}
+
+.imagen input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+
+}
+.contenedor-formulario a{
+    color:  rgba(226, 225, 228, 0.425);
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-decoration: none;
+
+}
+.contenedor-formulario .al{
+    color:  rgba(61, 61, 62, 0.425);
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-decoration: none;
+
+}
+.contenedor-formulario a:hover{
+
+    color: rgba(173, 138, 10);
+
+}
+.contenedor-formulario .al:hover{
+
+     color: rgba(173, 138, 10);
+
+}
+
+
+.boton{
+    width: 170px;
+    height: 45px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: black;
+    color:  rgba(226, 225, 228, 0.425);
+}
+.boton:hover{
+    color: rgba(173, 138, 10);
+}
+
+
+
+
+
+/* animacion de los formulario */
+
+.sign-up{
+    /* para poder mover el formulario en orisontal usamos el translatex */
+    transform: translateX(-100%); 
+}
+
+.contenedor.toggle .sign-in{
+    transform: translateX(100%);
+}
+.contenedor.toggle .sign-up{
+    transform: translateX(0);
+}
+
+
+
+
+.contenedor-bienvenido{
+    position: absolute;
+    width: 50%;
+    height: 100% ;
+    display: flex;
+    align-items: center;
+    transform: translateX(100%);
+    background-color:  rgb(226, 223, 223);
+   overflow: hidden;
+  transition: transform 0.4s ease-in-out, border-radius 0.5s ease-in-out;
+  border-radius: 50% 0 0 50%;
+    
+}
+
+.contenedor.toggle .contenedor-bienvenido{
+    transform:  translateX(0);
+    border-radius: 0 50% 50% 0;
+    background-color:   rgb(152, 147, 147);;
+}
+
+.contenedor-bienvenido .bienvenido{
+  
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0.50px;
+    transition: transform 0.4s ease-in-out ;
+}
+
+.clase-bienvenido-sign-in{
+    transform: translateX(110%);
+}
+.clase-bienvenido-sign-up{
+    transform: translateX(10%);
+}
+.contenedor-bienvenido h3{
+    font-size: 40px;
+}
+.contenedor-bienvenido p{
+    font-size: 14px;
+    text-align: center;
+}
+.contenedor-bienvenido .boton{
+    border: 2px solid white;
+}
+
+.contenedor.toggle .clase-bienvenido-sign-in{
+    transform: translateX(3%);
+}
+
+.contenedor.toggle .clase-bienvenido-sign-up{
+    transform: translateX(-100%);
+}
+
+.logo{
+
+    position: absolute;
+    display: flex;
+    margin-top: -33%;
+    width: 70%;
+   left: 25%;
+   border-radius: 40% 70% 70% 40%;
+
+}
+.logo2{
+    position: absolute;
+    display: flex;
+    margin-top: -25%;
+    width: 60%;
+   right:  25%;
+   border-radius: 40% 70% 70% 40%;
+
+}

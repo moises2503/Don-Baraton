@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(226, 225, 228, 0.425);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: white;
+    
+    
+}
+.img_container:hover{/*zoom a la lista*/
+    transform: scale(1.3);
+   
+}
+
+
+.container .img_container{
+    width: 350px;
+    height: 450px;
+    margin-bottom: 10px;
+}
+.container .img_container .main_img{/*imagen principal*/
+    
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(1,23,46, 0.6);
+    object-fit: cover;
+}
+.container .thumbal_contaner{/*mover toda laseccion de las imagenes*/
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .thumbal_contaner .thubanail{/*imagemes de abajo*/ 
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    object-fit: cover;
+    opacity: .7;
+    transition: .3s;
+}
+.container .thumbal_contaner .thubanail:hover{/*al pasar por las imagenes se hace clara la imagen*/
+    opacity: 1;
+}
+
+.active{
+    opacity: 1;
+    box-shadow: 0 5px 5px rgba(1,23,46, 0.6);
+}
+.container{/*mover toda la seleccion*/
+    position: relative;
+    left: 730px; /*mover izquierda o derecha*/
+    top: 20px;  /*para bajar la imagen*/
+}
+.img13{ /*posicion de las imagenes lap*/
+    margin: 100px;
+    width: 90px;
+    height: 90px;
+    position: relative;
+     left: -670px;
+     top: -50px;  /*bajar una imagen*/
+      
+}
+/*imagenes de abajo*/
+.card{
+    border: 50px solid rgba(226, 225, 228, 0);;
+    margin: 10px;
+    width: 200px;
+    height: 230px;
+    position: relative;
+    left: 380px;
+    top: 410px;  
+    cursor: pointer;     
+}
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 5px #000;
+}
+.card .front img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3{
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    height: 25px;
+line-height: 25px;
+color: #202020;
+background: rgb(248, 248, 248);
+text-align: center;
+}
+.card .back { /*descripcion trasera*/
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    font-size: 15px;
+    box-shadow: 0 5px 5px #000;
+
+}
+.card .back .link{ /*linea de sepacion*/
+    border-top: solid 1px #f5f5f6;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.card .back .link a{
+    color: aquamarine; /*color de la lista*/
+    text-decoration: none;
+}
+.card .back .link a:hover{ /*color al pasas sobre la lista*/
+    color: rgb(238, 238, 238);
+}
+.card .back h3{/*titulo traseo*/
+    color: #f5f5f6;
+    font-size: 20px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
